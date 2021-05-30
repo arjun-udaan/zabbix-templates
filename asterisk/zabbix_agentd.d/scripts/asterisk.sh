@@ -4,7 +4,7 @@
 # version: 20210317
 
 # comment to disable sudo
-sudo="sudo -u asterisk"
+sudo="sudo"
 
 # enable the caching of asterisk commands (to lowering the load caused by frequent queries)
 asteriskCacheEnabled="true"
