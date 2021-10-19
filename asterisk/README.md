@@ -38,6 +38,11 @@ Check Asterisk PBX engine using Zabbix Network Monitoring system
   - IAX2/SIP/PJSIP Peers/Endpoints high latency
 
 ## Installation for Zabbix Agent 1
+rpm -Uvh https://repo.zabbix.com/zabbix/5.0/rhel/8/x86_64/zabbix-release-5.0-1.el8.noarch.rpm
+dnf clean all
+
+dnf install zabbix-agent
+
 - `mkdir -p /etc/zabbix/zabbix_agentd.d/scripts/`
 - `cp zabbix_agentd.d/scripts/asterisk.sh /etc/zabbix/zabbix_agentd.d/scripts/asterisk.sh`
 - `chmod 755 /etc/zabbix/zabbix_agentd.d/scripts/asterisk.sh`
